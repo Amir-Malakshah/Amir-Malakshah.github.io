@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Style CSS -->
+  <style>
+    /* Reset basique */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #111;
+      color: white;
+      scroll-behavior: smooth;
+    }
+
+    /* Menu fixe */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #222;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00adb5;
+    }
+
+    /* Sections */
+    section {
+      height: 100vh;
+      padding-top: 80px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2rem; }
+    p { font-size: 1.1rem; color: #ccc; }
+
+    /* Boutons */
+    .btn {
+      padding: 10px 25px;
+      background: #00adb5;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #007a85;
+    }
+
+    /* Container boutons GitHub */
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+    }
+
+    .project-card a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #00adb5;
+      font-weight: 600;
+    }
+
+    /* Footer / Icons */
+    .social-icons {
+      margin-top: 15px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: white;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #00adb5;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Menu -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Section Intro -->
+  <section id="about">
+    <h1>Hello, I'm YOUR NAME</h1>
+    <h2>Web Developer</h2>
+    <button class="btn" onclick="window.location='#contact'">Get in Touch</button>
+
+    <div class="social-icons">
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <!-- Section About -->
+  <section id="about">
+    <h2>About</h2>
+    <p>I am a web developer specialized in Frontend and Backend technologies. I create modern and responsive websites.</p>
+  </section>
+
+  <!-- Section Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>HTML, CSS, JavaScript, React, Node.js, Express, MongoDB</p>
+  </section>
+
+  <!-- Section Portfolio -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Frontend Project</h3>
+        <a href="https://github.com/Bahador885/frontend-project" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Backend Project</h3>
+        <a href="https://github.com/Bahador885/backend-project" target="_blank">GitHub</a>
+      </div>
+      <!-- Ajoute plus de projets ici -->
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: youremail@example.com</p>
+    <p>Phone: +1 234 567 890</p>
+  </section>
+
+</body>
+</html>
